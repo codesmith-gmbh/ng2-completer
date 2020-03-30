@@ -1,6 +1,6 @@
 {
-  "name": "ng2-completer",
-  "version": "9.0.0",
+  "name": "@codesmith-gmbh/ng2-completer",
+  "version": "9.0.0-rc1",
   "description": "angular autocomplete/typeahead component",
   "main": "./bundles/ng2-completer.umd.js",
   "module": "./esm5/ng2-completer.js",
@@ -16,8 +16,7 @@
     "compodoc": "compodoc -p tsconfig.json",
     "compodoc-serve": "compodoc -s",
     "start": "cross-env webpack-dev-server --inline --progress --port 8080",
-    "deploy:gh-pages": "npm run build:demo:prod && cross-env ./node_modules/.bin/gh-pages -d dist/demo",
-    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
+    "deploy:gh-pages": "npm run build:demo:prod && cross-env ./node_modules/.bin/gh-pages -d dist/demo"
   },
   "typings": "./ng2-completer.d.ts",
   "keywords": [
@@ -43,11 +42,11 @@
   },
   "homepage": "http://oferh.github.io/ng2-completer/",
   "license": "MIT",
-  "repository": "oferh/ng2-completer",
+  "repository": "codesmith/ng2-completer",
   "peerDependencies": {
-    "@angular/common": ">= 6.0.0",
-    "@angular/core": ">= 6.0.0",
-    "@angular/forms": ">= 6.0.0"
+    "@angular/common": ">= 9.0.0",
+    "@angular/core": ">= 9.0.0",
+    "@angular/forms": ">= 9.0.0"
   },
   "devDependencies": {
     "@angular/animations": ">= 6.0.0",
